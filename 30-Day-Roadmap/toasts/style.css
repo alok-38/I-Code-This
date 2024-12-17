@@ -7,3 +7,7 @@
 body {
     background-color: #F0F3FB;
 }
+
+div {
+    display: flex;
+}
