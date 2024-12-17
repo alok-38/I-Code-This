@@ -11,6 +11,8 @@ body {
 main {
     background-color: #fff;
     padding: 3rem 5rem;
+    width: 550px;
+    margin: 100px auto;
 }
 
 h3 {
@@ -21,6 +23,22 @@ p {
     margin-bottom: 2rem;
 }
 
+h3,
+p {
+    text-align: center;
+}
+
 .email {
     margin-bottom: 1rem;
+    display: flex;
+    gap: 10px;
+}
+
+.email input,
+.email button {
+    height: 25px;
+    padding: 15px 45px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
 }
