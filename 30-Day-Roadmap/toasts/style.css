@@ -11,3 +11,29 @@ body {
 div {
     display: flex;
 }
+
+.first {
+    background-color: #FFFFFF;
+}
+
+.second {
+    background-color: #141625;
+    color: #FFFFFF;
+}
+
+.first,
+.second {
+    width: 740px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.first .fa-solid {
+    background-color: #0ABF2B;
+    height: 20px;
+    width: 20x;
+    border-radius: 50%;
+    color: #FFFFFF;
+}
