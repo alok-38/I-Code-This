@@ -7,3 +7,26 @@
 body {
     background-color: #F0F3FB;
 }
+
+.white {
+    background-color: #ffffff;
+    display: flex;
+}
+
+.dark {
+    background-color: #141625;
+    color: #ffffff;
+    display: flex;
+}
+
+.article1--flex,
+.article2--flex,
+.article3--flex,
+.article4--flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+section {
+    width: 740px;
+}
