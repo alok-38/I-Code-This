@@ -1,0 +1,26 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #ffffff;
+}
+
+main {
+    background-color: #F5F7F9;
+    width: 70%;
+    margin: auto;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+div {
+    background-color: #FFFFFF;
+    height: 500px;
+    width: 500px;
+    margin: auto;
+}
