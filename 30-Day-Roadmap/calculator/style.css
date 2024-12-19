@@ -35,8 +35,10 @@ section>div {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 5px;
+    padding: 15px;
     color: #57696C;
+    font-weight: 100;
+    border: 1px solid #D1D8D9;
 }
 
 #plus-minus {
