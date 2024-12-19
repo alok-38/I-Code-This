@@ -9,6 +9,8 @@ body {
     display: flex;
     flex-direction: column;
     height: 70vh;
+    align-items: center;
+    justify-content: center;
 }
 
 header {
@@ -23,3 +25,37 @@ main {
     display: grid;
 }
 
+section {
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+section>div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    color: #57696C;
+}
+
+#plus-minus {
+    display: flex;
+    flex-direction: column;
+}
+
+#plus-minus div {
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.calculator__functions-row div,
+#multiply,
+#subtract,
+#add {
+    background-color: #E5E9EC;
+}
+
+section div:not(#divide):not(#multiply):not(#subtract):not(#add):not(#equals):not(#CE):not(#C):not(#del) {
+    background-color: #FFFFFF;
+}
