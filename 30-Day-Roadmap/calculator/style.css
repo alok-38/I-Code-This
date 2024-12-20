@@ -11,6 +11,7 @@ body {
     height: 70vh;
     align-items: center;
     justify-content: center;
+    font-family: "Roboto Mono", serif;
 }
 
 header {
@@ -57,7 +58,7 @@ section>div {
     justify-content: center;
     padding: 15px;
     color: #57696C;
-    font-weight: 100;
+    font-weight: 300;
     border: 1px solid #D1D8D9;
     transition: transform 0.1s ease, background-color 0.2s ease;
     cursor: pointer;
