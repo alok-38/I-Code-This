@@ -18,6 +18,25 @@ header {
     color: #FBFEFB;
     height: 150px;
     width: 300px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+header div {
+    margin-left: auto;
+    margin-right: 25px;
+}
+
+#calculation {
+    font-size: 18px;
+    margin-top: 50px;
+}
+
+#result {
+    font-weight: 600;
+    font-size: 32px;
 }
 
 main {
@@ -40,6 +59,16 @@ section>div {
     color: #57696C;
     font-weight: 100;
     border: 1px solid #D1D8D9;
+    transition: transform 0.1s ease, background-color 0.2s ease;
+    cursor: pointer;
+}
+
+/* Button press effect */
+section>div:active {
+    transform: scale(0.95);
+    /* Slightly shrink the button */
+    background-color: #D1D8D9;
+    /* Change background color when pressed */
 }
 
 #plus-minus {
@@ -61,4 +90,14 @@ section>div {
 
 section div:not(#divide):not(#multiply):not(#subtract):not(#add):not(#equals):not(#CE):not(#C):not(#del) {
     background-color: #FFFFFF;
+}
+
+#equals {
+    background-color: #FF6567;
+    color: #ffffff;
+}
+
+#equals:active {
+    background-color: #FF3D40;
+    /* Darker red on press */
 }
