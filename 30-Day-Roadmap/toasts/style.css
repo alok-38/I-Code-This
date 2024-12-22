@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #F0F3FB;
+    display: flex;
+    flex-direction: column;
+    height: 70vh;
+    align-items: center;
+    justify-content: center;
+}
+
+section  div {
+    width: 740px;
+    margin: 0 auto;
+}
+
+.section__first--white,
+.section__first--dark {
+    display: flex;
+}
+
+.check {
+    display: flex;
+}
