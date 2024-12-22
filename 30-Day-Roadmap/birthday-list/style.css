@@ -16,6 +16,7 @@ main {
     background-color: #FFFFFF;
     color: #343434;
     width: 350PX;
+    border-radius: 5px;
 }
 
 img {
@@ -24,4 +25,40 @@ img {
     width: 50px;
     border-radius: 50%;
     object-fit: cover;
+    margin-right: 10px;
+}
+
+h3 {
+    margin: 2rem 0 1.5rem 2rem;
+}
+
+h4 {
+    margin-bottom: 5px;
+}
+
+.names {
+    display: flex;
+    align-items: center;
+}
+
+.names:not(:nth-child(5)) {
+    margin-bottom: 1rem;
+}
+
+section {
+    padding: 0 0 2rem 2rem;
+}
+
+button {
+    background: transparent;
+    background-color: #F76BAC;
+    border-radius: 2.5px;
+    outline: none;
+    color: #ffffff;
+    padding: 15px 45px;
+    display: block;
+    margin: 0 auto 1.5rem auto;
+    border: none;
+    width: 80%;
+    letter-spacing: 1px;
 }
