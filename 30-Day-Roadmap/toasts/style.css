@@ -13,16 +13,52 @@ body {
     justify-content: center;
 }
 
-section  div {
-    width: 740px;
-    margin: 0 auto;
+section {
+    width: 640px;
+}
+
+.section__first {
+    margin-bottom: 30px;
+}
+
+.section__three {
+    margin-top: 30px;
 }
 
 .section__first--white,
 .section__first--dark {
     display: flex;
+    justify-content: space-between;
+    padding: 15px;
 }
 
 .check {
     display: flex;
+    gap: 15px;
+}
+
+.section__three .section__first--white,
+.section__three .section__first--dark {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+/* background colors */
+.section__first--white {
+    background-color: #FFFFFF;
+    color: #303030;
+}
+
+.section__first--dark {
+    background-color: #141625;
+    color: #EEF0FD;
+}
+
+.section__two div {
+    border-radius: 50px;
+}
+
+section .section__first--white {
+    margin-bottom: 15px;
 }
