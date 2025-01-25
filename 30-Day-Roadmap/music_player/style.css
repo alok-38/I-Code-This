@@ -1,7 +1,72 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     display: flex;
     align-items: center;
     justify-content: center;
     background-color: #F6F6F6;
     font-family: "Inter", serif;
+}
+
+main {
+    background-color: #FAFCFC;
+    width: 350px;
+}
+
+header {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.hamburger {
+    font-size: 30px;
+    color: #737F7B;
+}
+
+.cube-icon {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #737F7B;
+    color: white;
+    font-size: 20px;
+    border-radius: 8px;
+    position: relative;
+    cursor: pointer;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease;
+}
+
+.cube-icon:hover {
+    transform: scale(1.1);
+}
+
+.cube-icon:before,
+.cube-icon:after {
+    content: '';
+    position: absolute;
+    background-color: white;
+    transition: transform 0.3s ease;
+}
+
+.cube-icon:before {
+    width: 4px;
+    height: 30px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.cube-icon:after {
+    width: 30px;
+    height: 4px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
