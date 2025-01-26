@@ -1,0 +1,26 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #41266E;
+    font-family: "Poppins", serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+main {
+    background-color: #ffffff;
+    width: 375px;
+    padding: 2.5rem 1rem;
+}
+
+h1 {
+    font-size: 1.5rem;
+    margin-bottom: 2.5rem;
+}

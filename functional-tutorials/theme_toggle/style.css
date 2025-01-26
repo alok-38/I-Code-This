@@ -1,0 +1,91 @@
+/* Base body styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+    min-height: 100vh;
+    margin: 0;
+    padding: 2rem;
+    transition: background-color 0.3s, color 0.3s;
+    /* Add transition for text color */
+}
+
+/* Hide the checkbox */
+.toggler {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+}
+
+/* Toggler label */
+.toggler+.toggler-background {
+    cursor: pointer;
+    display: block;
+    width: 6rem;
+    padding: 0.2rem;
+    background-color: #021322;
+    border-radius: 999px;
+}
+
+/* Big circle (toggle button) */
+.big-circle {
+    height: 2rem;
+    width: 2rem;
+    border-radius: 50%;
+    background-color: #fff601;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.2s, transform 0.3s;
+}
+
+/* Small circle (inner part of the toggle) */
+.small-circle {
+    background-color: #965003;
+    height: 60%;
+    width: 60%;
+    border-radius: 50%;
+}
+
+/* When the toggle is checked */
+.toggler:checked+.toggler-background .big-circle {
+    background-color: #021322;
+    transform: translate(200%, 0);
+}
+
+.toggler:checked+.toggler-background .small-circle {
+    background-color: #fff601;
+}
+
+.toggler:checked+.toggler-background {
+    background-color: #965003;
+}
+
+/* Dark theme */
+body.dark-theme {
+    background-color: #021322;
+    color: #fff;
+    /* Text color for dark mode */
+}
+
+/* Content section */
+.content {
+    max-width: 40rem;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+/* Header style */
+h1 {
+    text-align: center;
+    margin-bottom: 2rem;
+}
