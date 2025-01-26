@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@900&family=Merriweather:wght@400;700;900&family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Merriweather', serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #F5F8FF;
+    min-height: 100vh;
+}
+
+main {
+    display: flex;
+    background-color: #FFFFFD;
+    border-radius: 16px;
+}
+
+.container {
+    display: flex;
+    border: 15px solid #ffffff;
+    background-color: rgb(245, 248, 255, 0.6);
+    padding: 4rem;
+    align-items: center;
+    justify-content: center;
+    width: 75rem;
+}
+
+h1,
+h2 {
+    margin-bottom: 1rem;
+}
+
+h2 {
+    font-weight: 900;
+}
+
+h1 {
+    font-size: 4rem;
+    font-weight: 700;
+}
+
+h1 span {
+    font-size: calc(2.5rem / 1.5);
+}
+
+section {
+    width: calc(69rem / 3);
+    margin-right: 3rem;
+}
+
+section>p {
+    max-width: 90%;
+    line-height: 1.5;
+}
+
+div {
+    margin-bottom: 2rem;
+}
+
+button {
+    margin: 1.5rem 0 0 0;
+    padding: 1.3rem;
+    border-radius: 6px;
+    border: none;
+    outline: none;
+    background: transparent;
+    color: #000;
+    cursor: pointer;
+    font: 600 1.2rem 'Poppins', sans-serif;
+    margin-top: 2rem;
+}
+
+.free {
+    background-color: rgb(237, 187, 255, 0.7);
+}
+
+.upgrade {
+    background-color: #aef1f5;
+}
+
+.try {
+    background-color: #ffddb6;
+}
