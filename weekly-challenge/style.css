@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #051428;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    font-family: 'Raleway', sans-serif;
+}
+
+.outer-circle {
+    border-radius: 50px solid #011631;
+}
+
+.inner-circle {
+    background-color: #3949AC;
+    border-radius: 50%;
+}
+
+.linkedin,
+.comments,
+.profile {
+    background-color: #081D36;
+}
+
+.linkedin {
+    width: 90px;
+    height: 90px;
+    border-radius: 8px;
+}
+
+.linkedin span:nth-child(1) {
+    color: #ffffff;
+}
