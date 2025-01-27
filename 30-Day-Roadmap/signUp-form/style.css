@@ -1,0 +1,28 @@
+body {
+    background-color: #f4f9ff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family: 'poppins', sans-serif;
+    line-height: 1.5;
+}
+
+main,
+form,
+button {
+    font-family: 'poppins', sans-serif;
+}
+
+main {
+    background-color: #FFFFFF;
+    border: 20px solid #E0E9F6;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    padding: 24px;
+}
+
+h1 {
+    font-size: 1.5rem;
+}
