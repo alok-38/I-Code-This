@@ -34,8 +34,32 @@ body {
     width: 90px;
     height: 90px;
     border-radius: 8px;
+    font-weight: bold;
+    display: grid;
+    place-content: center;
+    position: absolute;
 }
 
 .linkedin span:nth-child(1) {
     color: #ffffff;
+    font-size: 3.2rem;
+}
+
+.linkedin span:last-child {
+    right: 0;
+    width: 25px;
+    height: 25px;
+    display: grid;
+    place-content: center;
+    border-radius: 100%;
+    outline: none;
+    border: none;
+    position: absolute;
+    right: 0;
+    transform: translate(30%, -30%);
+}
+
+.profile button,
+.linkedin span:last-child {
+    background-color: rgb(241, 160, 8);
 }
