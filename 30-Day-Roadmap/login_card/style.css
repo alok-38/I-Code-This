@@ -5,9 +5,46 @@
 }
 
 body {
+    font-family: 'Inter', sans-serif;
     background-color: #F9EFF0;
     display: flex;
     align-items: center;
     justify-content: center;
     min-height: 100vh;
+}
+
+a {
+    text-decoration: none;
+    font-family: 'Inter', sans-serif;
+}
+
+main {
+    display: flex;
+    border-radius: 16px;
+    height: 70vh;
+}
+
+.log-in {
+    background-color: #FFFFFF;
+}
+
+.btn {
+    display: flex;
+    align-items: center;
+    font-family: 'Inter', sans-serif;
+}
+
+.log-in img {
+    width: 25px;
+    object-fit: cover;
+    height: 25px;
+    border-radius: 50%;
+}
+
+.bg-image {
+    background-image: url('images/water.jpg');
+    width: 40%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
 }
