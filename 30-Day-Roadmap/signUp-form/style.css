@@ -14,15 +14,73 @@ button {
     font-family: 'poppins', sans-serif;
 }
 
+
 main {
     background-color: #FFFFFF;
     border: 20px solid #E0E9F6;
     border-radius: 16px;
     display: flex;
     flex-direction: column;
-    padding: 24px;
+    width: 475px;
+}
+
+header,
+form,
+footer {
+    width: 275px;
+    margin: auto;
+}
+
+header {
+    text-align: center;
 }
 
 h1 {
-    font-size: 1.5rem;
+    font-size: 1.75rem;
+    color: #2E2E44;
+}
+
+p {
+    font-weight: 500;
+    color: #302D47;
+}
+
+span {
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form div {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+input,
+button {
+    cursor: pointer;
+    border: unset;
+    outline: unset;
+    font-weight: 600;
+    /* background: transparent; */
+    padding: 12px;
+}
+
+input {
+    border: 2px solid #D7D7E2;
+}
+
+input::placeholder {
+    color: #c2c2da;
+}
+
+footer p {
+    font-size: .75rem;
+    color: #96979C;
+    text-align: center;
+    width: 250px;
 }
