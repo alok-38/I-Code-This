@@ -1,0 +1,34 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #1A2042;
+    font-family: Arial, sans-serif;
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+}
+
+main {
+    background-color: #FFFFFF;
+}
+
+h1 {
+    color: #333333;
+}
+
+form label {
+    color: #000000;
+    font-weight: 600;
+}
+
+button {
+    border: unset;
+    outline: unset;
+    background-color: #303864;
+    color: #F9FAFB;
+    border-radius: 6px;
+}
