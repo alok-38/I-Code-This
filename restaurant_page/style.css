@@ -38,6 +38,7 @@ select {
     font: inherit;
     outline: unset;
     border: unset;
+    cursor: pointer;
 }
 
 /* 7. Avoid text overflows */
@@ -83,6 +84,7 @@ ol {
     --primary-color: #000000;
     --secondary-color: #EE4A1E;
     --font-size: 16px;
+    --teritiary-color: #F6F2F0;
 }
 
 /* Body */
@@ -93,6 +95,8 @@ body {
 
 button {
     font-family: "Oswald", serif;
+    background-color: var(--primary-color);
+    color: #ffffff;
 }
 
 a {
@@ -116,10 +120,25 @@ p {
 /* Hero */
 .hero {
     background-color: var(--secondary-color);
+    height: 840px;
 }
 
 .hero-section {
     display: flex;
+}
+
+.hero-section p {
+    font-size: 24px;
+    width: 600px;
+}
+
+.hero-section button {
+    width: 270px;
+    height: 68px;
+    padding: 16px 64px;
+    font-size: 24px;
+    font-weight: 500;
+    margin-top: 2.5rem;
 }
 
 nav {
@@ -139,6 +158,21 @@ nav ul a {
 
 .smiley {
     display: flex;
+    width: 1090px;
+    /* position: absolute; */
+}
+
+.smiley h1 {
+    font-size: 110px;
+}
+
+.smiley img {
+    object-fit: cover;
+    width: 124.96px;
+    height: 125px;
+    position: absolute;
+    left: 585px;
+    top: 215px;
 }
 
 .burger-img img {
