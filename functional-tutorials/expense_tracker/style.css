@@ -17,12 +17,14 @@ main {
     background-color: #FFFFFF;
     border-radius: 16px;
     padding: 12px 24px 24px 24px;
-    width: 375px;
+    width: 400px;
+    height: 458px;
 }
 
 h1 {
     color: #333333;
     margin: 1rem 0 1.5rem 0;
+    text-align: center;
 }
 
 form {
@@ -54,6 +56,11 @@ button {
     color: #F9FAFB;
     margin: .75rem 0 1.75rem 0;
     cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #464f83;
 }
 
 input:first-of-type {
@@ -67,6 +74,7 @@ li {
     border-radius: 5px;
     font-size: 1rem;
     padding: 12px;
+    width: 100%;
 }
 
 li {
