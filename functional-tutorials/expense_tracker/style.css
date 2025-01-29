@@ -18,7 +18,7 @@ main {
     border-radius: 16px;
     padding: 12px 24px 24px 24px;
     width: 400px;
-    height: 458px;
+    /* height: 458px; */
 }
 
 h1 {
@@ -77,6 +77,10 @@ li {
     width: 100%;
 }
 
+ul {
+    list-style-type: none;
+}
+
 li {
     background-color: #f4d16f;
     border-radius: 5px;
@@ -87,6 +91,6 @@ li {
 }
 
 .summary label {
-    margin-bottom: 10px;
+    margin-bottom: 15px;
     font-size: 1.25rem;
 }
