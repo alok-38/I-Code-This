@@ -10,25 +10,75 @@ body {
     display: flex;
     align-items: center;
     min-height: 100vh;
+    justify-content: center;
 }
 
 main {
     background-color: #FFFFFF;
+    border-radius: 16px;
+    padding: 12px 24px 24px 24px;
+    width: 375px;
 }
 
 h1 {
     color: #333333;
+    margin: 1rem 0 1.5rem 0;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
 }
 
 form label {
     color: #000000;
     font-weight: 600;
+    margin-bottom: 5px;
+}
+
+button,
+input {
+    border: unset;
+    outline: unset;
+    background: transparent;
+}
+
+input {
+    border: 1px solid #ccc;
+    padding: 10px;
+    font-size: 16px;
 }
 
 button {
-    border: unset;
-    outline: unset;
     background-color: #303864;
     color: #F9FAFB;
-    border-radius: 6px;
+    margin: .75rem 0 1.75rem 0;
+    cursor: pointer;
+}
+
+input:first-of-type {
+    margin-bottom: .75rem;
+}
+
+input,
+button,
+li {
+    height: 45px;
+    border-radius: 5px;
+    font-size: 1rem;
+    padding: 12px;
+}
+
+li {
+    background-color: #f4d16f;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    color: #303864;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+.summary label {
+    margin-bottom: 10px;
+    font-size: 1.25rem;
 }
