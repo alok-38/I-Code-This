@@ -1,0 +1,31 @@
+body {
+    margin: 0;
+    background-color: floralwhite;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    min-height: 100vh;
+}
+
+.balloon {
+    cursor: pointer;
+    animation: bounce 5s ease-in-out infinite;
+    display: flex;
+    height: 10rem;
+    width: 10rem;
+    border-radius: 50%;
+}
+
+#balloon1 {
+    background-color: crimson;
+}
+
+#balloon2 {
+    background-color: darkorchid;
+}
+
+#balloon3 {
+    background-color: darkorange;
+}
