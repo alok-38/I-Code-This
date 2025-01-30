@@ -13,19 +13,58 @@ body {
     cursor: pointer;
     animation: bounce 5s ease-in-out infinite;
     display: flex;
-    height: 10rem;
-    width: 10rem;
     border-radius: 50%;
+    transition: transform 0.5s ease;
+    /* Smooth transition for scaling and translate */
+    transform-origin: bottom center;
+    box-shadow: inset 15px -12px 0 #4c378635;
+    z-index: 10;
+    position: relative;
 }
 
+/* Different starting heights for each balloon */
 #balloon1 {
     background-color: crimson;
+    animation-delay: 0s;
+    height: 10rem;
+    width: 8.5rem;
 }
 
 #balloon2 {
     background-color: darkorchid;
+    animation-delay: 1s;
+    height: 10rem;
+    width: 8.5rem;
 }
 
 #balloon3 {
     background-color: darkorange;
+    animation-delay: 2s;
+    height: 10rem;
+    width: 8.5rem;
+}
+
+@keyframes bounce {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-25px);
+    }
+}
+
+/* Balloon tip */
+#balloon1:before,
+#balloon2:before,
+#balloon3:before {
+    content: "▲";
+    color: inherit;
+    display: block;
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    bottom: -15px;
 }
