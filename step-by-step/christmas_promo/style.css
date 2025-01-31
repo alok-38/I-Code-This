@@ -1,9 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
 
-:root {
-    font-size: 62.5%;
-}
-
 * {
     margin: 0;
     padding: 0;
@@ -20,10 +16,88 @@ body {
 }
 
 main {
+    width: 31rem;
+    height: 33rem;
+    background-color: #fff;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 2.5rem;
+    border-top-right-radius: 2rem;
+    position: relative;
     box-shadow: 2px 2px 17px #d0d0d0;
+}
+
+/* Normal state of ::after pseudo-element */
+main::after {
+    content: '\00d7';
+    position: absolute;
+    /* Changed to absolute so it stays within 'main' */
+    top: 10%;
+    /* Adjusted */
+    right: 10%;
+    /* Adjusted */
+    color: grey;
+    font-size: 2.7rem;
+    font-weight: 200;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+/* Apply hover effect to the main element, and transform the pseudo-element */
+main:hover::after {
+    transform: rotate(90deg);
+    /* This rotates the pseudo-element when 'main' is hovered */
+}
+
+.merry-xmas {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    font-size: 1.8rem;
+}
+
+.message {
+    max-width: 60%;
+    margin: 0 auto;
+    text-align: center;
+    font-weight: 200;
+}
+
+.message p {
+    margin-bottom: 1.5rem;
+}
+
+.discount {
+    color: #e3a857;
+    font-weight: 500;
+}
+
+button {
+    font-family: inherit;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #242e4c;
+    padding: 1.1rem 3.2rem;
+    border: 1px solid #242e4c;
+    border-radius: 3px;
+    box-shadow: 1px 1px 3px #323f68;
+    transition: all 0.5s ease-in;
+}
+
+button:hover {
+    padding: 1.1rem 1rem;
+    font-weight: 600;
+    border-radius: 2.5rem;
+    box-shadow: 0px 0px 40px #e3a857;
+    cursor: pointer;
+}
+
+button:active {
+    transform: scale(0.98);
 }
