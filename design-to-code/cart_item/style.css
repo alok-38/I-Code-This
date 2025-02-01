@@ -5,36 +5,9 @@
 }
 
 body {
-    background-color: #EFF2FA;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;
+    background-color: #F7F5F6;
 }
 
 main {
     background-color: #FFFFFF;
-    display: flex;
-    border-radius: 16px;
-    overflow: hidden;
-}
-
-img {
-    width: 175px;
-    height: 200px;
-    object-fit: cover;
-}
-
-.product-description {}
-
-h4 {
-    background-color: black;
-    border-radius: 50px;
-    width: 100px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #FFFFFF;
-    padding: 1.5px 2.5px;
-    font-weight: normal;
 }
