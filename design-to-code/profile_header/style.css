@@ -9,8 +9,48 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    min-height: 100vh;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    cursor: pointer;
+    display: flex;
 }
 
 main {
     background-color: #FFF9F2;
+    overflow: hidden;
+    display: flex;
+}
+
+img {
+    object-fit: cover;
+    height: 75px;
+    width: 75px;
+    border-radius: 45%;
+}
+
+progress {
+    width: 100%;
+    height: 20px;
+    border-radius: 5px;
+    background-color: #eee;
+    /* This is the background color */
+}
+
+progress::-webkit-progress-bar {
+    background-color: #eee;
+    /* Background color for Webkit-based browsers (Chrome, Safari) */
+}
+
+progress::-webkit-progress-value {
+    background-color: #F17A37;
+    /* Color of the progress bar */
+}
+
+progress::-moz-progress-bar {
+    background-color: #F17A37;
+    /* For Firefox */
 }
