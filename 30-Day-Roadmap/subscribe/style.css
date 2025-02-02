@@ -14,4 +14,27 @@ body {
     justify-content: center;
     min-height: 100vh;
     padding: 0 1.5rem;
+    background-color: #F1F5F9;
+}
+
+section {
+    background-color: #FFFFFF;
+    border-radius: 6px;
+    overflow: hidden;
+    padding: 3rem 0.5rem;
+    width: 36rem;
+    transition: all 0.5s;
+}
+
+h2 {
+    font-size: 1.125rem;
+}
+
+p {
+    font-size: 0.875rem;
+}
+
+.input-email {
+    display: flex;
+    gap: 0.5rem;
 }
