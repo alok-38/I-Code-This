@@ -33,6 +33,14 @@ body {
     transition: all 0.3s;
     border-radius: 9999px;
     padding: 0.75rem 0.25rem;
+    outline: none;
+    border: none;
+    background: transparent;
+}
+
+.account:hover button {
+    background-color: #3b82f6;
+    color: #ffffff;
 }
 
 .person {
@@ -53,4 +61,51 @@ body {
 
 .person p {
     font-size: 0.875rem;
+}
+
+/* Apply pop-down to account hover */
+.account:hover .pop-down {
+    max-height: 18rem;
+    /* Expanded height when hovered */
+}
+
+.pop-down {
+    max-height: 0;
+    transition: max-height 1s ease-in-out 0.3s;
+    overflow: hidden;
+}
+
+.pop-down .button-container {
+    padding: 1rem;
+    margin-top: 0.5rem;
+}
+
+.button-container button {
+    display: flex;
+    align-items: center;
+    color: #3b82f6;
+    gap: 0.5rem;
+    font-size: 0.75rem;
+    cursor: pointer;
+}
+
+.button-container button span {
+    font-family: 'Material Symbols Outlined', sans-serif;
+}
+
+.button-container .border-top {
+    border-top: 1px solid #e5e7eb;
+    margin-top: 1rem;
+    padding-top: 1.5rem;
+}
+
+.button-container .button-container__grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.5rem;
+}
+
+.button-container button span {
+    font-weight: 100;
+    font-size: 1.25rem;
 }
