@@ -94,6 +94,11 @@ input[type="search"]::-webkit-search-cancel-button {
     padding: 0 1rem;
 }
 
+.friend-item {
+    display: flex;
+    align-items: center;
+}
+
 .friends-list::-webkit-scrollbar {
     width: 6px;
 }
@@ -112,15 +117,6 @@ input[type="search"]::-webkit-search-cancel-button {
     background-color: #8869ae;
 }
 
-.friend-item {
-    display: flex;
-    align-items: center;
-}
-
-.friend-item .img-wrapper {
-    flex-shrink: 0;
-}
-
 .friend-item img {
     aspect-ratio: 1 / 1;
     border: 4px solid #916faa36;
@@ -129,6 +125,10 @@ input[type="search"]::-webkit-search-cancel-button {
     object-position: center center;
     width: 100%;
     max-width: 4rem;
+}
+
+.friend-item .img-wrapper {
+    flex-shrink: 0;
 }
 
 .friend-item .friend-name {
@@ -159,14 +159,4 @@ input[type="search"]::-webkit-search-cancel-button {
 .friend-item .followed {
     background-color: #fff;
     color: #6c559c;
-}
-
-@media(max-width: 640px) {
-    .friend-item img {
-        max-width: 3.5rem;
-    }
-
-    .friend-item .friend-name {
-        font-size: 0.9rem;
-    }
 }
