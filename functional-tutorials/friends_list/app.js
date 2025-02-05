@@ -46,11 +46,35 @@ function renderFriendsList() {
         imgElement.src = friend.imageUrl;
         imgElement.alt = friend.altText;
         nameElement.textContent = friend.name;
+
         // Set the follow button text and class
         followButton.textContent = friend.isFollowing ? 'Following' : 'Follow';
         if (friend.isFollowing) {
             followButton.classList.add('followed');
         }
+
+        // Add click event to toggle follow/unfollow state
+        followButton.addEventListener('click', () => {
+            friend.isFollowing = !friend.isFollowing;
+            followButton.textContent = friend.isFollowing ? 'Following' : 'Follow';
+            followButton.classList.toggle('followed', friend.isFollowing);
+        });
+
+        // Hover effect: Change to "Unfollow" in red when hovering over the "Following" button
+        followButton.addEventListener('mouseenter', () => {
+            if (friend.isFollowing) {
+                followButton.textContent = 'Unfollow';
+                followButton.style.color = 'red';
+            }
+        });
+
+        // Restore button state when mouse leaves
+        followButton.addEventListener('mouseleave', () => {
+            if (friend.isFollowing) {
+                followButton.textContent = 'Following';
+                followButton.style.color = ''; // Reset color
+            }
+        });
         // Append the cloned item to the ul
         ulEl.appendChild(friendItem);
 
