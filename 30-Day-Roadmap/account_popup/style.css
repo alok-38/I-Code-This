@@ -1,0 +1,56 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f7fafc;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 0 1rem;
+}
+
+.account {
+    width: 18rem;
+    border-radius: 5rem;
+    background-color: #ffffff;
+    padding: 1rem;
+    cursor: pointer;
+    transition: all 0.5s;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.account:hover {
+    border-radius: 1rem;
+    transform-origin: top;
+}
+
+.account button {
+    transition: all 0.3s;
+    border-radius: 9999px;
+    padding: 0.75rem 0.25rem;
+}
+
+.person {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.person img {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 9999px;
+}
+
+.person div h2 {
+    margin: 0;
+}
+
+.person p {
+    font-size: 0.875rem;
+}
