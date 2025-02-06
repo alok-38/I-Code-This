@@ -5,68 +5,138 @@
 }
 
 body {
+    background-color: #f5f5f5;
     display: flex;
-    align-items: center;
     justify-content: center;
-    background-color: #F6F6F6;
-    font-family: "Inter", serif;
+    align-items: center;
+    min-height: 100vh;
 }
 
 main {
-    background-color: #FAFCFC;
-    width: 350px;
+    background-color: #ffffff;
+    padding: 2.25rem;
+    margin-bottom: 2rem;
+    border-radius: 0.375rem;
+    max-width: 28rem;
 }
 
 header {
     display: flex;
-    justify-content: space-evenly;
+    gap: 2.5rem;
 }
 
-.hamburger {
-    font-size: 30px;
-    color: #737F7B;
+header div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #4b626a;
 }
 
-.cube-icon {
-    width: 30px;
-    height: 30px;
+header .font-thin {
+    font-weight: 100;
+}
+
+header h1 {
+    font-weight: 700;
+    font-size: 1.25rem;
+}
+
+.progress-bar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.custom-progress-bar {
+    width: 100%;
+    height: 0.375rem;
+    border-radius: 9999px;
+    background-color: #ebedec;
+}
+
+.custom-progress-bar div {
+    width: 66.6667%;
+    height: 100%;
+    border-radius: 9999px;
+    background-color: #00c0a5;
+}
+
+.progress-bar span {
+    color: #4b626a;
+}
+
+.custom-buttons-container {
+    display: flex;
+    justify-content: space-between;
+    width: 75%;
+    margin: auto;
+}
+
+.custom-buttons-container button {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+.custom-buttons-container .icon {
+    stroke: #6d7e86;
+    fill: none;
+}
+
+#play-pause .icon {
+    stroke-width: 1.5;
+    fill: #6d7e86;
+}
+
+.playlist {
+    color: #6d7e86;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 0;
+}
+
+.playlist div {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.25rem;
+    padding: 0.75rem 0;
+    cursor: pointer;
+    transition: transform 0.2s ease, background-color 0.3s ease;
+}
+
+.playlist div:hover {
+    transform: scale(1.05);
+    background-color: rgba(9, 209, 182, 0.09);
+}
+
+.playlist div:nth-child(2) {
+    color: #3b4c53;
+}
+
+.playlist .song-title {
+    font-weight: 600;
+}
+
+.playlist .song-title-bold {
+    font-weight: 700;
+}
+
+.playlist .song-duration {
+    font-weight: 600;
+}
+
+.playlist .song-duration-bold {
+    font-weight: 700;
+}
+
+img {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #737F7B;
-    color: white;
-    font-size: 20px;
-    border-radius: 8px;
-    position: relative;
-    cursor: pointer;
-    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
-    transition: transform 0.2s ease;
-}
-
-.cube-icon:hover {
-    transform: scale(1.1);
-}
-
-.cube-icon:before,
-.cube-icon:after {
-    content: '';
-    position: absolute;
-    background-color: white;
-    transition: transform 0.3s ease;
-}
-
-.cube-icon:before {
-    width: 4px;
-    height: 30px;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-.cube-icon:after {
-    width: 30px;
-    height: 4px;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    width: 13rem;
+    height: 13rem;
+    object-fit: cover;
+    object-position: top;
+    margin: 1.5rem auto;
 }
