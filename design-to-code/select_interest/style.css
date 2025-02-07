@@ -93,3 +93,63 @@ button[title] {
     display: inline-flex;
     align-items: center;
 }
+
+template>div {
+    display: grid;
+    place-items: center;
+    gap: 0.5rem;
+}
+
+template input.peer {
+    display: none;
+}
+
+template label {
+    position: relative;
+    display: grid;
+    place-items: center;
+    border-radius: 9999px;
+    background-color: #ffffff;
+    width: 8rem;
+    aspect-ratio: 1;
+    cursor: pointer;
+    transition: transform 0.3s ease, background 0.3s ease;
+    isolation: isolate;
+}
+
+template label::before {
+    content: '';
+    background-color: #BFDBFE;
+    position: absolute;
+    border-radius: 9999px;
+    z-index: -10;
+    transform: scale(0);
+    transition: transform 0.3s ease;
+}
+
+template label:hover::before {
+    transform: scale(1);
+}
+
+template label .img {
+    transition: opacity 0.3s ease;
+}
+
+template label svg.check {
+    position: absolute;
+    width: 10rem;
+    color: #1d4ed8;
+    transition: transform 0.3s ease;
+}
+
+template input.peer:checked+template label .img {
+    opacity: 0.3;
+}
+
+template input.peer:checked+input label svg.check {
+    transform: scale(1);
+}
+
+template h3 {
+    margin-top: 1rem;
+}
