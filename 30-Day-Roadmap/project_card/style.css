@@ -1,3 +1,9 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     background: linear-gradient(to bottom right, #d10e58, #250b6e);
     display: flex;
@@ -13,25 +19,4 @@ main {
     border-top: 4px solid #c63675;
     border-radius: 0.5rem;
     max-width: 28rem;
-}
-
-.flex {
-    display: flex;
-    justify-content: space-between;
-}
-
-.title-and-date {
-    display: flex;
-    flex-direction: column;
-}
-
-.title-and-date h1 {
-    font-size: 1.25rem;
-    font-weight: 600;
-    letter-spacing: 0.05em;
-}
-
-.title-and-date p {
-    font-size: 0.75rem;
-    font-weight: 200;
 }
