@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Message</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js" defer></script>
+</head>
+
+<body>
+    <main>
+        <header>
+            <h1>New message</h1>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="w-6 h-6 text-slate-400 cursor-pointer close">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+            </svg>
+        </header>
+        <div class="input">
+            <label for="Search" class="relative   ">
+                <input type="url" name="" id="search" aria-placeholder="left" placeholder="Type to Search " required>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor"
+                    class="w-5 h-5  cursor-pointer hover:text-white transition-all text-slate-400 absolute top-1/2 -translate-y-1/2 left-4 mt-0.5">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
+                </svg>
+
+
+
+            </label>
+        </div>
+        <section>
+            <h1>Recent conversations
+            </h1>
+            <div>
+                <div class="profile">
+                    <div>
+                        <img src="https://unsplash.com/photos/iEEBWgY_6lA/download?ixid=M3wxMjA3fDB8MXxzZWFyY2h8MXx8dXNlcnxlbnwwfHx8fDE2ODU5NjgyNTF8MA&force=true&w=1920"
+                            alt="Dice">
+                    </div>
+                    <div>
+                        <h2>David Jacobsen </h2>
+                        <span>@dav_id</span>
+
+                    </div>
+                </div>
+                <div class="circle">
+
+                    <label for="new">
+                        <input id="new" data-tab="1" type="checkbox"
+                            class="before:content[''] peer relative h-6  w-6 cursor-pointer  checked:bg-[#4393f5]  appearance-none rounded-full border-2 border-slate-200 transition-all before:absolute before:top-2/4 before:left-2/4 before:block before:h-9 before:w-9 before:-translate-y-2/4 before:-translate-x-2/4 before:rounded-full before:bg-blue-gray-500 before:opacity-0 before:transition-opacity checked:border-[#4393f5]  checked:before:bg-[#4393f5] hover:before:opacity-10" />
+                        <div>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                                stroke="currentColor" stroke-width="1">
+                                <path fill-rule="evenodd"
+                                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                    clip-rule="evenodd"></path>
+                            </svg>
+                        </div>
+                    </label>
+
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
