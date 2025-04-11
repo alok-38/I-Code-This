@@ -95,6 +95,10 @@ section:nth-of-type(2) div svg:first-of-type {
     padding-left: .5rem;
 }
 
+section:nth-of-type(2) div svg:last-of-type {
+    cursor: pointer;
+}
+
 section:last-of-type {
     display: flex;
     justify-content: space-between;
@@ -234,7 +238,7 @@ a {
     font-size: 14px;
     font-weight: 800;
     text-decoration: underline;
-    margin-top: 1rem;
+    margin-top: 1.5rem;
 }
 
 /* Media query */
@@ -270,12 +274,13 @@ a {
     section:last-of-type {
         display: flex;
         flex-direction: column;
+        width: 100%;
     }
 
     section:last-of-type .switch {
         margin-bottom: 1rem;
         display: flex;
-        gap: 100%;
+        gap: 50%;
     }
 
     a {
