@@ -10,8 +10,95 @@ body {
     line-height: 1.5;
     font-family: "Poppins", sans-serif;
     background-image: url('snow.jpg');
-    height: 100vh;
+    min-height: 70vh;
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.wrapper {
+    max-width: 1020px;
+}
+
+h1 {
+    font-size: 5rem;
+    font-weight: 300;
+    display: flex;
+    margin: auto;
+    justify-content: center;
+}
+
+main {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+main section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.big-text {
+    font-size: 6rem;
+    margin: 0 2rem;
+}
+
+main section span {
+    font-size: 1.5rem;
+}
+
+@media screen and (max-width: 1110px) {
+    body {
+        min-height: 100vh;
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+    }
+
+    h1 {
+        font-size: 5rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .big-text {
+        font-size: 3.75rem;
+        margin: 0 2rem;
+    }
+
+}
+
+@media screen and (max-width: 940px) {
+    body {
+        min-height: 100vh;
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+    }
+
+    h1 {
+        font-size: 3.75rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .big-text {
+        font-size: 3rem;
+        margin: 0 2rem;
+    }
+
+}
+
+@media screen and (max-width: 424px) {
+    h1 {
+        text-align: center;
+    }
 }
