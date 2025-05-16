@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #EEF0F2;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Josefin Slab', serif;
+}
+
+main {
+    background-color: #FFFFFF;
+    box-shadow: 4px 4px 10px 0px rgba(0, 0, 0, 0.3);
+    border-top-right-radius: 15px;
+    width: 80%;
+    max-width: 500px;
+    padding: 5rem 1rem;
+    text-align: center;
+    position: relative;
+}
+
+svg {
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    cursor: pointer;
+}
+
+h1 {
+    font-family: 'Kalnia', serif;
+}
+
+button {
+    font-family: 'Josefin Slab', serif;
+}
